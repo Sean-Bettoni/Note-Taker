@@ -3,7 +3,7 @@ const app = express();
 const webRoutes = require('./routes/web');
 const apiRoutes = require('./routes/api');
 
-
+const path = require('path');
 
 // If env port is not there fall back || to 3001
 const PORT = process.env.PORT || 3001;
@@ -25,13 +25,9 @@ app.use(apiRoutes);
 
 
 
-
-
-// app.get("*", (req, res) => {
-//     res.sendFile(path.join(__dirname, "public", "404.html"));
-// });
-
-
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "public", "404.html"));
+});
 
 
 
