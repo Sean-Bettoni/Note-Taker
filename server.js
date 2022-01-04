@@ -17,7 +17,11 @@ app.use(express.static('public'));
 app.use(express.json());
 
 
-app.use(express.urlencoded({extended: true}));
+
+// Might not need this code
+// app.use(express.urlencoded({extended: true}));
+
+
 
 // Injecting/loading routes into app
 app.use(webRoutes);
@@ -25,15 +29,17 @@ app.use(apiRoutes);
 
 
 
+// app.get("*", (req, res) => {
+//     res.sendFile(path.join(__dirname, "public", "404.html"));
+// });
+
 app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "public", "404.html"));
+    res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
 
 
 // Setting up local host
-app.listen(PORT, ()=>{
-    
+app.listen(PORT, () => {
     console.log('app is running at http://localhost:' + PORT);
-
 })
