@@ -15,6 +15,10 @@
   There are no instillation instructions.
   ### Usage:
   To access this application please navigate to https://note-taker-application-sb.herokuapp.com
+  ![note-taker-1](https://user-images.githubusercontent.com/82442926/148904215-fc9706d0-fd05-458c-a180-f5f5d550f7f9.png)
+![note-taker-2](https://user-images.githubusercontent.com/82442926/148904232-938c3cf1-0774-4d9a-bc80-7674c3e50d55.png)
+
+  
   ### License:
   This project is licensed under:
   MIT_License
